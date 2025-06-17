@@ -1,0 +1,50 @@
+:root{
+    --btnColor: #E94339;
+    --txtColor: rgb(20, 20, 20);
+    --txtBtnColor: #FFFFFF;
+}
+@font-face {
+    font-family:"Inter" ;
+    src: url(./fonts/Inter-Italic-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-style: italic;
+    font-weight: 200;
+}
+.header-delivery{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 62px;
+}
+.header-delivery__logo{
+    width: 42px;
+    height: 42px;
+}
+.header-delivery__list{
+    display: flex;
+    gap: 45px;
+}
+.header-delivery__href{
+    text-decoration: none;
+    color: var(--txtColor);
+}
+.button{
+    border: none;
+    background-color: var(--btnColor);
+    color: var(--txtBtnColor);
+    border-radius: 20px;
+    font-family: Inter;
+    padding: 14px 27px;
+}
+.header-delivery__log-btn{
+    background-color: transparent;
+    border: none;
+     font-family: Inter;
+}
+
+@media only screen and (max-width: 570px) {
+    .header-delivery{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+}
