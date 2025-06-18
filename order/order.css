@@ -1,0 +1,73 @@
+:root{
+    --btnColor: #E94339;
+    --txtColor: rgb(20, 20, 20);
+    --txtBtnColor: #FFFFFF;
+    --formbg: #F6F6F6;
+    --formcolortext:#AFAFAF; 
+}
+@font-face {
+    font-family:"Inter" ;
+    src: url(./fonts/Inter-Italic-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-style: italic;
+    font-weight: 200;
+}
+
+.order__functional{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 20%;
+    height: 478px;
+}
+.order__text-action{
+    display: flex;
+    flex-direction: column;
+}
+
+.order__bigText{
+    font-size: 2em;
+    color: var(--txtColor);
+}
+.order__text{
+     font-size: 0.8em;
+    color: var(--txtColor);
+}
+.order__form-order{
+    position: relative;
+    width: 75%;
+    height: 45px;
+}
+.order__input{
+    background-color: var(--formbg);
+    color: var(--formcolortext);
+    border-radius: 40px;
+    border: none;
+    position: absolute;
+    width: 95%;
+    padding: 24px;
+    font-size: 0.8em;
+}
+.order__input::placeholder{
+    color: var(--formcolortext);
+}
+.order__button{
+    width: 134px;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    width: 40%;
+    height: 52px;
+    font-size: 0.8em;
+    padding: 10px;
+}
+.order__wraper{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+}
+.order__logo-appPart{
+    width: 186px;
+    height: 65px;
+    background-color: var(--formbg);
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+}
