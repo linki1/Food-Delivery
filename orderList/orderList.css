@@ -1,0 +1,125 @@
+:root{
+    --btnColor: #E94339;
+    --txtColor: rgb(20, 20, 20);
+    --txtBtnColor: #FFFFFF;
+    --formbg: #F4F4F4;
+    --formcolortext:#AFAFAF; 
+    --dopbg:#FAFAFA;
+}
+@font-face {
+    font-family:"Inter" ;
+    src: url(./fonts/Inter-Italic-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-style: italic;
+    font-weight: 200;
+}
+@font-face {
+    font-family: "space";
+    src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf) format('truetype');
+       font-style: italic;
+    font-weight: 200;
+}
+.order-list__text-wrap{
+    margin-top: 200px;
+    max-width: 55vw;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order-list__title{
+    font-size: 2.5em;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 17px;
+}
+.order-list__sub-title{
+    font-size: 0.8em;
+}
+.order-list-wraper{
+    margin-top: 48px;
+}
+.order-list__picture-wrap{
+display: flex;
+gap: 32px;
+ justify-content: center;
+    flex-wrap: wrap;
+}
+.order-list__logo-wraper{
+    width: 168px;
+    height: 200px;
+    background-color: var(--dopbg);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:39px;
+}
+.order-list__logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: var(--txtBtnColor);
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.order-list__picture-wrap--logo{
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--dopbg);
+    border-radius: 10px;
+}
+.order-list__picture{
+    width: 192px;
+    height: 116px;
+}
+.order-list__picture-text{
+    font-size: 1.5rem;
+    align-self: flex-start;
+}
+.order-list__text-wrap-deliver{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+     flex-wrap: wrap;
+    justify-content: center;
+    width: 85vw;
+    margin-top: 40px;
+}
+.order-list__discrib-text{
+   width: 35vw;
+   
+}
+.order-list__text-deliver--wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:32px ;
+}
+.order-list__sub-quotation{
+    position: absolute;
+    font-size: 6rem;
+    top: -40%;
+    left: 0%;
+    font-family:space;
+}
+.wrap-quotation{
+    height: 100px;
+    position: relative;
+        align-self: flex-end;
+}
+@media only screen and (max-width:800px) { 
+    .order-list__text-wrap{
+    margin-top: 500px;}
+    .order-list__text-wrap-deliver{
+        gap: 50px;
+    }
+}
