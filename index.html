@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="./orderList/orderList.css">
 </head>
 <body>
-    <div class="wraper">
+    <div class="sticky">
+        <div class="wraper">
+            
+        
     <script src="./headr/header.js"></script>
     <header class="header-delivery">
         <img  src="./headr/headerlogo.png" alt="logo" class="header-delivery__logo">
@@ -33,9 +36,9 @@
                 <div class="order__text-action">
                     <h2 class="order__bigText">Your Favorite Food Delivery Partner</h2>
                     <p class="order__text">The food at your doorstep. Why starve when you have us. You hunger partner. Straight out of the oven to your doorstep. </p>
-                    <div class="order__form-ordering">
-                        <input type="text" placeholder="Enter your delivery location" class="order__input">
-                        <button class=" button  order__button">Order Now</button>
+                    <div class="order__form-ordering ordering-input">
+                        <input type="text" placeholder="Enter your delivery location" class="order-input">
+                        <button class=" button  order-button">Order Now</button>
                     </div>
                     <div class="order__wraper">
                         <div class="order__logo-app">
@@ -80,7 +83,7 @@
            </div>
            <div class="order-list__text-wrap-deliver">
             <div class="wrap-quotation">
-                <p class="order-list__sub-quotation">"</p>
+                <p class="order-list__sub-quotation">“</p>
                 <p class="order-list__discrib-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
             </div>
             
@@ -102,7 +105,74 @@
            </div>
           </section>
         </article>
+        <article class="instruction">
+            <section class="instruction__text">
+               <h2 class="instruction__text--big" >How To Order?</h2>
+            </section>
+            <section class="instruction__block">
+                  <div class="instruction__block-wraper">
+                    <p class="instruction__block-number">01</p>
+                    <div class="instruction__block-text-wraper">
+                        <p class="instruction__block-logo">📍</p>
+                        <p class="instruction__block-text">Choose your location</p>
+                    </div>
+                  </div>
+                  <div class="instruction__block-wraper">
+                    <p class="instruction__block-number">02</p>
+                    <div class="instruction__block-text-wraper">
+                        <p class="instruction__block-logo">🙇🏻‍♂️</p>
+                        <p class="instruction__block-text">Choose what to eat</p>
+                    </div>
+                  </div>
+                  <div class="instruction__block-wraper">
+                    <p class="instruction__block-number">03</p>
+                    <div class="instruction__block-text-wraper">
+                        <p class="instruction__block-logo">🍔</p>
+                        <p class="instruction__block-text">May your first order</p>
+                    </div>
+                  </div>
+                  <div class="instruction__block-wraper">
+                    <p class="instruction__block-number">04</p>
+                    <div class="instruction__block-text-wraper">
+                        <p class="instruction__block-logo">🏠</p>
+                        <p class="instruction__block-text">Now! Your food in way</p>
+                    </div>
+                  </div>
+            </section>
+        </article>
+        <article class="slider__wrap">
+            <section class="slider__text-block">
+                    <h2 class="slider__text--big">Our Clients Feedback</h2>
+                    <p class="slider__text">The food at your doorstep. Why starve when you have us. You hunger partner. Straight out of the oven to your doorstep.</p>
+            </section>
+            <section id="n1" class="slider">
+                <p class="slider__qoute">“</p>   
+                <p class="slider__coment">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi”</p>
+                <p class="slider__name">Mitchell Marsh</p>
+                <p class="slider__sub-name">CEO, Bexon Agency</p>
+                <button id="left"></button>
+                <button id="right"></button>
+                <div class="slider__lable">
+                    <label form="right"  id="lable-r" class="slider-btn"><</label>
+                    <label form="left" id="lable-l" class="slider-btn">></label>            
+                </div>
+            </section>
+        </article>
+    </div>
+        <article class="subscribe">
+            <section class="subscribe__wrap">
+                <div class="subscribe__text-wrap">
+                 <h2 class="subscribe__text-big">Subscribe our newsletter</h2>
+                 <p class="subscribe__text">Browse local restaurants and businesses for delivery by entering your address blow.</p>
+                </div>
+                       <div class="subscribe__input">
+                        <input type="text" placeholder="Enter your email address..." class="media-input order-input ">
+                        <button class=" button media-button order-button">Send</button>
+                    </div>
+            </section>
+        </article>
     </main>
+    <footer></footer>
 </div>
 </body>
 </html>

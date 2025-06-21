@@ -1,3 +1,21 @@
+:root{
+    --btnColor: #E94339;
+    --txtColor: rgb(20, 20, 20);
+    --txtBtnColor: #FFFFFF;
+    --formbg: #F4F4F4;
+    --formcolortext:#AFAFAF; 
+    --dopbg:#FAFAFA;
+    --instruction:#2E2C49;
+    --small-text:#616161;
+    --slider: #E2E2E2 ;
+    --bgsub: #FFEFEC;
+}
+@font-face {
+    font-family:"Inter" ;
+    src: url(./fonts/Inter-Italic-VariableFont_opsz\,wght.ttf) format('truetype');
+    font-style: italic;
+    font-weight: 200;
+}
 @font-face {
     font-family:"Inter" ;
     src: url(./fonts/Inter-Italic-VariableFont_opsz\,wght.ttf) format('truetype');
@@ -11,4 +29,208 @@
 }
 body{
     font-family: Inter;
+}
+.instruction{
+    margin-top: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 59px;
+}
+.instruction__text--big{
+    font-size: 3rem;
+    color: var(--instruction);
+}
+.instruction__block{
+display: flex;
+gap: 5vw;
+flex-wrap: wrap;
+justify-content: center;
+}
+.instruction__block-wraper{
+    position: relative;
+    width: 214px;
+    height: 270px;
+    background-color: var(--dopbg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* z-index: 1; */
+}
+.instruction__block-number{
+    position: absolute;
+    top: -13%;
+    font-size: 3rem;
+    z-index: -1;
+    left: -10%;
+    color: var(--btnColor);
+}
+.instruction__block-logo{
+    font-size: 3rem;
+    text-align: center;
+}
+.instruction__block-text{
+    max-width: 168px;
+    margin-top: 24px;
+     text-align: center;
+     font-weight: bold;
+}
+.slider__wrap{
+    width: 45vw;
+    margin-top:195px ;
+    margin-left: auto;
+    margin-right: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.slider__text-block{
+    width: 40vw;
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 18px;
+}
+.slider__text--big{
+    width: 35vw;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.slider__text{
+    font-size: 1rem;
+    width: 32vw;
+    text-align: center;
+    line-height: 30px;
+}
+.slider{
+    width: 44vw;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+}
+.slider__qoute{
+    width: auto;
+    font-size: 8rem;
+    color: var(--btnColor);
+    text-align: center;
+    font-family: inter;
+    height: 120px; 
+    padding-top: 60px;
+}
+.slider__coment{
+    width: 32vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+   
+}
+.slider__name{
+    font-weight: 800;
+    font-size: 0.8em;
+    width: 13%;
+    text-align: center;
+    margin-top:42px ;
+}
+
+.slider__sub-name{
+    font-size: 0.6em;
+    width: 14%;
+    color: var(--small-text);
+    text-align: center;
+}
+.slider__lable{
+    margin-top: 25px;
+    width: 110px;
+    height: 36px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.slider-btn{
+    background-color: var(--slider);
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+.slider button {
+  visibility: hidden;
+}
+
+.subscribe__wrap{
+    margin-top: 167px;
+    width: 100%;
+    height: 302px;
+    background-color: var(--bgsub);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.subscribe__input{
+    position: relative;
+    width: 570px;
+    height: 45px;
+}
+.subscribe__text-big{
+    font-size: 2.8rem;
+    margin-bottom:12px;
+    
+}
+.subscribe__text-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 725px;
+    height: 96px;
+}
+@media only screen and (max-width:800px) {
+    .instruction__text--big {
+    font-size: 2.5rem;
+}
+.instruction__block {
+    gap: 59px;}
+    .slider__wrap{
+        width: 90%;
+    }
+    .slider{
+        width: 85%;
+    }
+    .slider__text-block{
+        width:85%;
+    }
+    .slider__text--big{
+        width: 95%;
+    }
+    .slider__text{
+        width: 90%;
+    }
+    .slider__coment {
+    width: 90%;}
+    .slider__name {
+        width: 40%;
+    }
+    .slider__sub-name {
+    width: 24%;
+}
+.subscribe__text-wrap {
+    width: 90%;
+    align-items: center;
+}
+.subscribe__input {
+    width: 90%;
+}
+.media-input{
+    width: 85% !important;
+}
+.media-button{
+    right: 10%!important;
+}
+.subscribe__wrap{
+    align-content: center;
+}
 }

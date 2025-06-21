@@ -84,6 +84,7 @@ gap: 32px;
 .order-list__picture-text{
     font-size: 1.5rem;
     align-self: flex-start;
+    max-width: 473px;
 }
 .order-list__text-wrap-deliver{
     display: flex;
