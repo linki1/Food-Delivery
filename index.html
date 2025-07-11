@@ -8,11 +8,9 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
+    
     <div class="sticky">
         <div class="wraper">
-            
-        
-    <script src="./headr/header.js"></script>
     <header class="header-delivery">
         <img  src="./headr/headerlogo.png" alt="logo" class="header-delivery__logo">
         <nav class="header-delivery__navigation">
@@ -23,8 +21,8 @@
             </ul>
         </nav>
         <div class="header-delivery__logo-wrap">
-            <button class="header-delivery__log-btn">Login</button>
-            <button class="button">Sign Up</button>
+            <button id="logHedBtn" class="header-delivery__log-btn">Login</button>
+            <button id="singHedBtn" class="button">Sign Up</button>
         </div>
     </header>
     <main > 
@@ -35,7 +33,7 @@
                     <p class="order__text">The food at your doorstep. Why starve when you have us. You hunger partner. Straight out of the oven to your doorstep. </p>
                     <div class="order__form-ordering ordering-input">
                         <input type="text" placeholder="Enter your delivery location" class="order-input">
-                        <button class=" button  order-button">Order Now</button>
+                        <button class="btn_partical button  order-button btn">Order Now</button>
                     </div>
                     <div class="order__wraper">
                          <div class=" aplication-wrap">
@@ -74,7 +72,7 @@
                 <p class="order-list__logo-text">Sushi</p>
             </div>
             <div class="order-list__picture-wrap--logo">
-                <p class="order-list__picture-text">Find<span style="color:#FF5331 ;"> deals</span>,<span style="color:#009B00;">free delivery</span>, and more from our restaurant partners.</p>
+                <p class="order-list__picture-text">Find<span > deals</span>,<span>free delivery</span>, and more from our restaurant partners.</p>
                 <img class="order-list__picture" src="./orderList/scuter.png" alt="scuter">
             </div>
            </div>
@@ -151,7 +149,7 @@
                 <button id="right"></button>
                 <div class="slider__lable">
                     <label form="right"  id="lable-r" class="slider-btn"><</label>
-                    <label form="left" id="lable-l" class="slider-btn">></label>            
+                    <label form="left" id="lable-l" class="slider-btn highlight-elem">></label>            
                 </div>
             </section>
         </article>
@@ -164,7 +162,7 @@
                 </div>
                        <div class="subscribe__input">
                         <input type="text" placeholder="Enter your email address..." class="media-input order-input ">
-                        <button class=" button media-button order-button">Send</button>
+                        <button  class="btn_partical button media-button order-button">Send</button>
                     </div>
             </section>
         </article>
@@ -228,5 +226,9 @@
         </div>
     </footer>
 </div>
+<script src="./main.js"></script>
+<script src="./borderhighlight.js"></script>
+<script src="./btnParticalanimation.js"></script>
+<script src="./headr/header.js"></script>
 </body>
 </html>
